@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#name {
+  font-size: 350%;
+}
+
+#content-container {
+  border-top: 10px solid black; 
+}
+
+#bio {
+  font-size: 130%;
+}
+
+#bio a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#bio a:hover {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#bio li {
+  margin: 10px;
+}
+
+#links {
+  font-size: 150%;
+}
+
+#links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
