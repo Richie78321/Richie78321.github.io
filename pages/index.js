@@ -7,7 +7,7 @@ import Socials from "../components/Socials";
 export default function Index({ bioMarkdown }) {
   return (
     <BaseLayout title="Richie Goulazian - Portfolio">
-      <div className="mt-5 d-flex flex-column">
+      <div className="my-5 d-flex flex-column">
         <img
           id="photo"
           className="rounded-circle d-block mx-auto"
