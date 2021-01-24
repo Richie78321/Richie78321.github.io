@@ -2,7 +2,7 @@ import BaseLayout from "../layouts/BaseLayout";
 import ReactMarkdown from "react-markdown";
 import path from "path";
 import fs from "fs";
-import Socials from "../components/socials";
+import Socials from "../components/Socials";
 
 export default function Index({ bioMarkdown }) {
   return (
