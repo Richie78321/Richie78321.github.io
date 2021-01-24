@@ -1,9 +1,12 @@
-import { FaLinkedin, FaGithubSquare } from 'react-icons/fa'
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 export default function Socials({ className }) {
   return (
     <>
-      <div id="socials" className={"d-flex justify-content-around " + className}>
+      <div
+        id="socials"
+        className={"d-flex justify-content-around " + className}
+      >
         <a href="https://www.linkedin.com/in/rgoulazian/">
           <FaLinkedin size="2em" />
           <span className="ml-1">Linkedin</span>
@@ -20,5 +23,5 @@ export default function Socials({ className }) {
         }
       `}</style>
     </>
-  )
+  );
 }
