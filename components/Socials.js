@@ -11,6 +11,7 @@ export default function Socials({ className }) {
           target="_blank"
           rel="noreferrer"
           href="https://1drv.ms/b/s!Al1rmChF7eaeg4prNmJxllqoZZAvmw"
+          className="text-center"
         >
           <FaFileAlt size="2em" />
           <span className="ml-1">Resume</span>
@@ -19,6 +20,7 @@ export default function Socials({ className }) {
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/rgoulazian/"
+          className="text-center"
         >
           <FaLinkedin size="2em" />
           <span className="ml-1">Linkedin</span>
@@ -27,6 +29,7 @@ export default function Socials({ className }) {
           target="_blank"
           rel="noreferrer"
           href="https://github.com/Richie78321"
+          className="text-center"
         >
           <FaGithubSquare size="2em" />
           <span className="ml-1">GitHub</span>
