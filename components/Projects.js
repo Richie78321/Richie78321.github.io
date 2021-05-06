@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
 import { useEffect } from "react";
