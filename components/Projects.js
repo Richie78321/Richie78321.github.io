@@ -1,26 +1,33 @@
-import React from 'react'
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
 import { useEffect } from "react";
 
 function ProjectCard({ projectMarkdown }) {
   const {
-    attributes: {
-      title,
-      image,
-      link
-    },
-    body
+    attributes: { title, image, link },
+    body,
   } = projectMarkdown;
 
   return (
     <>
       <div className="project-card card h-100">
-        <img src={image} className={"card-img-top " + (image.endsWith("gif") ? "freezeframe" : null)} />
+        <img
+          src={image}
+          className={
+            "card-img-top " + (image.endsWith("gif") ? "freezeframe" : null)
+          }
+        />
         <div className="card-body">
-          <a href={link} target="_blank" rel="noreferrer"><h5 className="card-title">{title}</h5></a>
-          <ReactMarkdown linkTarget="_blank" source={body} className="card-text" />
+          <a href={link} target="_blank" rel="noreferrer">
+            <h5 className="card-title">{title}</h5>
+          </a>
+          <ReactMarkdown
+            linkTarget="_blank"
+            source={body}
+            className="card-text"
+          />
         </div>
       </div>
       <style jsx>{`
@@ -29,13 +36,13 @@ function ProjectCard({ projectMarkdown }) {
         }
 
         .project-card:hover {
-          box-shadow: 0px 0px 5px 1px rgba(232,232,232,1);
-          -moz-box-shadow: 2px 2px 5px 1px rgba(232,232,232,1);
-          -webkit-box-shadow: 2px 2px 5px 1px rgba(232,232,232,1);
+          box-shadow: 0px 0px 5px 1px rgba(232, 232, 232, 1);
+          -moz-box-shadow: 2px 2px 5px 1px rgba(232, 232, 232, 1);
+          -webkit-box-shadow: 2px 2px 5px 1px rgba(232, 232, 232, 1);
         }
       `}</style>
     </>
-  )
+  );
 }
 
 export default function Projects({ projectsMarkdown }) {
@@ -46,12 +53,26 @@ export default function Projects({ projectsMarkdown }) {
     })();
   }, []);
 
-  projectsMarkdown.sort((a, b) => moment(b.attributes.date, "MM/DD/YYYY") - moment(a.attributes.date, "MM/DD/YYYY"))
+  projectsMarkdown.sort(
+    (a, b) =>
+      moment(b.attributes.date, "MM/DD/YYYY") -
+      moment(a.attributes.date, "MM/DD/YYYY")
+  );
 
   return (
     <>
       <h3>Some of my favorite projects</h3>
-      <p className="mb-4">Here is a list of some of the projects I am most fond of. Check out my <a href="https://github.com/Richie78321" target="_blank" rel="noreferrer">GitHub</a> for more!</p>
+      <p className="mb-4">
+        Here is a list of some of the projects I am most fond of. Check out my{" "}
+        <a
+          href="https://github.com/Richie78321"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>{" "}
+        for more!
+      </p>
       <div className="row">
         {projectsMarkdown.map((projectMarkdown, index) => (
           <div key={index} className="col-md-6 col-lg-4 mb-3">
@@ -60,5 +81,5 @@ export default function Projects({ projectsMarkdown }) {
         ))}
       </div>
     </>
-  )
+  );
 }

@@ -23,7 +23,10 @@ function MyApp({ Component, pageProps }) {
 
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+          rel="stylesheet"
+        />
 
         {/* Site Metadata */}
         <link rel="manifest" href="/site.webmanifest" />

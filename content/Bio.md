@@ -1,4 +1,4 @@
-*tldr;* I am a computer science student currently studying at the University of Pittsburgh.
+_tldr;_ I am a computer science student currently studying at the University of Pittsburgh.
 
 I learn by building things. Personal projects let me explore what's possible with computer science. I also share the joy of personal projects with my peers through my role as the Experiential Learning Director for [Pitt CSC](https://pittcsc.org/), Pitt's largest computer science organization on campus.
 
