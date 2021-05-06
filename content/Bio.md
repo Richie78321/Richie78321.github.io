@@ -1,5 +1,5 @@
-- **Computer science student** at the University of Pittsburgh
-  - **Director of Experiential Learning** for Pitt's largest computer science organization
-    on campus, [Pitt CSC](https://pittcsc.org/)
-- Previously interned at **Google** and **Timberlane**
-- Incoming intern at **Google** and [Aurora self-driving](https://aurora.tech/)
+*tldr;* I am a computer science student currently studying at the University of Pittsburgh.
+
+I learn by building things. Personal projects let me explore what's possible with computer science. I also share the joy of personal projects with my peers through my role as the Experiential Learning Director for [Pitt CSC](https://pittcsc.org/), Pitt's largest computer science organization on campus.
+
+My professional career has brought me to **Google**, **Aurora**, and **Timberlane**. You can check out [my resume](https://1drv.ms/b/s!Al1rmChF7eaeg4prNmJxllqoZZAvmw) for more info.

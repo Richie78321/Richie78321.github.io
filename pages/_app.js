@@ -4,13 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/*Google Analytics*/}
       <Head>
+        {/*Google Analytics*/}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-180638861-1"
         />
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -21,6 +20,14 @@ function MyApp({ Component, pageProps }) {
               `,
           }}
         />
+
+        {/* Google Fonts */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+        {/* Site Metadata */}
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>

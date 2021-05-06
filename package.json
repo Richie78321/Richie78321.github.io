@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "freezeframe": "^5.0.2",
+    "front-matter": "^4.0.2",
     "fs": "^0.0.1-security",
+    "moment": "^2.29.1",
     "next": "10.0.5",
     "prettier": "^2.2.1",
     "react": "17.0.1",
