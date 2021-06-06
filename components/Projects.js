@@ -22,7 +22,9 @@ function ProjectCard({ projectMarkdown }) {
           <a href={link} target="_blank" rel="noreferrer">
             <h5 className="card-title mb-0">{title}</h5>
           </a>
-          <div className="mb-2"><i className="text-muted">{moment(date, "MM/DD/YYYY").year()}</i></div>
+          <div className="mb-2">
+            <i className="text-muted">{moment(date, "MM/DD/YYYY").year()}</i>
+          </div>
           <ReactMarkdown
             linkTarget="_blank"
             source={body}
