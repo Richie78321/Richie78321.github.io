@@ -2,7 +2,7 @@
 title: "Craft War"
 image: "projects/craft-war.gif"
 link: "https://github.com/Richie78321/craft-war"
-date: "4/1/2018"
+date: "4/1/2017"
 ---
 
 A 2D "Minecraft Clone" that features internet multiplayer, a day-night system, crafting mechanics, and caves!

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 function ProjectCard({ projectMarkdown }) {
   const {
-    attributes: { title, image, link },
+    attributes: { title, image, link, date },
     body,
   } = projectMarkdown;
 
@@ -20,8 +20,9 @@ function ProjectCard({ projectMarkdown }) {
         />
         <div className="card-body">
           <a href={link} target="_blank" rel="noreferrer">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title mb-0">{title}</h5>
           </a>
+          <div className="mb-2"><i className="text-muted">{moment(date, "MM/DD/YYYY").year()}</i></div>
           <ReactMarkdown
             linkTarget="_blank"
             source={body}
