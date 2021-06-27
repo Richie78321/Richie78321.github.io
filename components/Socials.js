@@ -10,7 +10,7 @@ export default function Socials({ className }) {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://1drv.ms/b/s!Al1rmChF7eaeg4prNmJxllqoZZAvmw"
+          href="https://1drv.ms/b/s!Al1rmChF7eaeg60WaTeuP-9_1sGTHQ"
           className="text-center mx-2"
         >
           <FaFileAlt size="1.25em" />
