@@ -12,7 +12,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Download Resume
-        run: wget https://drive.google.com/uc?export=download&id=19UZvcNgGWA2BiM4MUndADQFZVUPYPbdX -O ./resume.pdf
+        run: curl https://drive.google.com/uc?export=download&id=19UZvcNgGWA2BiM4MUndADQFZVUPYPbdX > ./resume.pdf
       - name: Commit New Resume
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
