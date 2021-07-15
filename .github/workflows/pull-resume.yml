@@ -1,8 +1,9 @@
 name: Pull Resume
 on:
   schedule:
-    # Pull daily at midnight EST
-    - cron: "0 4 * *"
+    # Pulls daily at midnight EST
+    - cron: '0 4 * * *'
+  workflow_dispatch:
 jobs:
   pull-resume:
     runs-on: ubuntu-latest
