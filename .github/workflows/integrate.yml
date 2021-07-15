@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
   workflow_run:
-    workflows: ["CI build"]
+    workflows: ["Pull Resume"]
     types:
       - completed
 jobs:
