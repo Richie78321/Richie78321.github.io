@@ -12,7 +12,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Download Resume
-        run: wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=19UZvcNgGWA2BiM4MUndADQFZVUPYPbdX' -O public/resume.pdf
+        run: wget --no-check-certificate 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL2IvcyFBbDFybUNoRjdlYWVnNjBXYVRldVAtOV8xc0dUSFE/root/content' -O public/resume.pdf
       - name: Commit New Resume
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
