@@ -65,7 +65,8 @@ export default function Projects({ projectsMarkdown }) {
     <>
       <h3>Some of my favorite free-time projects</h3>
       <p className="mb-4">
-        Here is a list of some of my favorite projects that I've done in my free time. Check out my{" "}
+        Here is a list of some of my favorite projects that I've done in my free
+        time. Check out my{" "}
         <a
           href="https://github.com/Richie78321"
           target="_blank"
