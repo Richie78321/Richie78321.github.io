@@ -10,7 +10,7 @@ import frontmatter from "front-matter";
 export default function Index({ bioMarkdown, projectsMarkdown }) {
   return (
     <BaseLayout title="Richie Goulazian - Portfolio">
-      <div className="container">
+      <div className="container mb-4">
         <div className="row mt-4 no-gutters">
           <div className="col-md-2 align-self-center text-md-left text-center mb-3 mb-md-0">
             <img
