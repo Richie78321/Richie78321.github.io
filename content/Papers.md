@@ -1,0 +1,11 @@
+## LLMs
+
+Introductory:
+* [A visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
+* [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
+* [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+* [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+
+GPTs:
+* [Language Models are Unsupervised Multitask Learners (GPT-2)](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+* [Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/abs/2005.14165)

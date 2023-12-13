@@ -58,7 +58,7 @@ export default function Index({ bioMarkdown, projectsMarkdown }) {
   );
 }
 
-export async function getStaticProps() {
+export function getStaticProps() {
   const bioMarkdownPath = path.join(process.cwd(), "content", "Bio.md");
   const projectsPath = path.join(process.cwd(), "content", "projects");
 
