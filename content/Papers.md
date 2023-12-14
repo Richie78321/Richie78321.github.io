@@ -5,6 +5,7 @@ Introductory:
 - [A visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
 
 LLMs:
+
 - [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
 - [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY)
