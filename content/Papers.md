@@ -24,6 +24,9 @@ Mixture of Experts (MoE):
   - This paper explores the use of Mixture of Experts (MoE) for NLP. MoE is rumored to be used in GPT-4.
   - Mixture of Experts = only running select parts of a neural network during inference time. Each "part" of the network is called an expert. The routing is determined by learned parameters, as simple as a single weight matrix.
   - MoE is nice because it allows for scaling model parameter count without needing to proportionally scale inference compute.
+  - They explored the challenge of splitting inference across experts reducing the number of examples each expert sees within a batch.
+    - Naively, one would train multiple copies of the full model in parallel. This would require `N` times more training data per batch for `N` experts in order to get the same batch size for the expert.
+    - Instead, they only host a _single_ shared instance of an expert, such that increasing the number of distributed devices increases the number of samples seen by the expert.
   - Something I didn't fully understand in this paper and would like to revisit is how they made the routing differentiable using random noise. It seems that by adding noise, they made routing involve continuous probabilities they enabled differentiation?
 - [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961)
   - This paper explores the idea that it is unnecessary to route to more than one expert at a time.
