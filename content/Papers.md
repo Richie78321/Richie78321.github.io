@@ -21,9 +21,11 @@ GPTs:
 Mixture of Experts (MoE):
 
 - [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/pdf?id=B1ckMDqlg)
-  - This paper introduces the concept of Mixture of Experts (MoE), which is rumored to be used in GPT-4.
-  - Mixture of Experts = only running select parts of a neural network during inference time. Each "part" of the network is called an expert. The routing is determined by a learned weight matrix.
+  - This paper explores the use of Mixture of Experts (MoE) for NLP. MoE is rumored to be used in GPT-4.
+  - Mixture of Experts = only running select parts of a neural network during inference time. Each "part" of the network is called an expert. The routing is determined by learned parameters, as simple as a single weight matrix.
+  - MoE is nice because it allows for scaling model parameter count without needing to proportionally scale inference compute.
 - [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961)
+  - This paper explores the idea that it is unnecessary to route to more than one expert at a time.
 
 Test-Time Compute:
 
