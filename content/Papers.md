@@ -19,6 +19,10 @@ Mixture of Experts (MoE):
 
 - [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/pdf?id=B1ckMDqlg)
 
+LLM Inference Strategies:
+
+- [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
+
 ## Distributed Systems
 
 - [Spanner: Google’s Globally-Distributed Database](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
