@@ -3,12 +3,15 @@
 Introductory:
 
 - [A visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
+  - This interactive website provides a satisfying justification for the "power" of neural networks to accomplish almost anything.
 
 LLMs:
 
-- [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+  - The original paper introducing Transformer models, the model used for most LLMs.
+- [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
 - [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+  - A truly awesome tutorial that helps build an intuition for how these models are actually "built".
 
 GPTs:
 
@@ -18,10 +21,18 @@ GPTs:
 Mixture of Experts (MoE):
 
 - [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/pdf?id=B1ckMDqlg)
+  - This paper introduces the concept of Mixture of Experts (MoE), which is rumored to be used in GPT-4.
+  - Mixture of Experts = only running select parts of a neural network during inference time. Each "part" of the network is called an expert. The routing is determined by a learned weight matrix.
+- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961)
 
-LLM Inference Strategies:
+Test-Time Compute:
 
 - [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
+  - This paper explores the idea of training a verifier model to verify solutions or logical steps, and then using that verifier to score the correctness of many LLM-generated problem solutions.
+  - The verifier models comes in two types: one that predicts the probability that each _step_ is correct, and one that predicts the probability that the entire solution as a whole is correct.
+  - The first type of verifier model requires training from human-labelled data.
+  - This paper represents an interesting paradigm shift: test-time compute (the amount of compute used for inference) can matter just as much as train-time compute.
+  - This paper acknowledges the potential of training a solution-generating model on the reward outputs from the verifier model.
 
 ## Distributed Systems
 
