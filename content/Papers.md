@@ -42,6 +42,24 @@ Test-Time Compute:
   - This paper represents an interesting paradigm shift: test-time compute (the amount of compute used for inference) can matter just as much as train-time compute.
   - This paper acknowledges the potential of training a solution-generating model on the reward outputs from the verifier model.
 
+Model Deployment:
+
+- [Distributed Training of Deep Learning Models:
+A Taxonomic Perspective](https://arxiv.org/abs/2007.03970)
+  - This paper describes the landscape of distributed model training (as of 2020).
+  - Distributed model training is broken down into two main categories: **data parallelism** and **model parallelism**.
+  - Data parallelism splits the training data across multiple replicas of the same model.
+    - As long as individual data points can be processed by the model independently (i.e. you aren't using something like batch normalization), then you can simply split a mini-batch of data across multiple models and then aggregate the results at the end.
+  - Model parallelism splits the model across multiple processes / machines.
+    - This is useful if the model is too large to fit on a single machine / GPU.
+    - Model parallelism can be either **horizontal** or **vertical**.
+    - Regardless of the type of model parallelism, this requires passing messages about model state between machines, where this communication can become a bottleneck.
+    - Vertical model parallelism means splitting the model layer-by-layer.
+      - Naively, all but one of the machines will be active at once unless a pipelining technique is used.
+    - Horizontal model parallelism means splitting the model within layers.
+      - This is much more complex and often avoided if possible.
+      - In a simple example, consider splitting a single large matrix multiplication across multiple machines. At the end of the day, a matrix multiplication is most simply a series of dot products.
+
 ## Distributed Systems
 
 - [Spanner: Google’s Globally-Distributed Database](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
