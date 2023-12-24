@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithubSquare, FaFileAlt } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaFileAlt, FaBook } from "react-icons/fa";
 
 export default function Socials({ className }) {
   return (
@@ -33,6 +33,15 @@ export default function Socials({ className }) {
         >
           <FaGithubSquare size="1.25em" />
           <span className="ml-1 align-middle">GitHub</span>
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="/papers"
+          className="text-center mx-2"
+        >
+          <FaBook size="1.25em" />
+          <span className="ml-1 align-middle">Papers</span>
         </a>
       </div>
 
