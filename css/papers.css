@@ -4,4 +4,10 @@
 
 .papersMarkdown ul {
   margin-top: 0px;
+
+  ul {
+    padding-left: 25px;
+    font-size: 15px;
+    color: #6c757d !important;
+  }
 }
