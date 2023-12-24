@@ -45,7 +45,7 @@ Test-Time Compute:
 Model Deployment:
 
 - [Distributed Training of Deep Learning Models:
-A Taxonomic Perspective](https://arxiv.org/abs/2007.03970)
+  A Taxonomic Perspective](https://arxiv.org/abs/2007.03970)
   - This paper describes the landscape of distributed model training (as of 2020).
   - Distributed model training is broken down into two main categories: **data parallelism** and **model parallelism**.
   - Data parallelism splits the training data across multiple replicas of the same model.
