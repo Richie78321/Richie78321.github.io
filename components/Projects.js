@@ -25,10 +25,9 @@ function ProjectCard({ projectMarkdown }) {
           <div className="mb-2">
             <i className="text-muted">{moment(date, "MM/DD/YYYY").year()}</i>
           </div>
-          <ReactMarkdown
-            linkTarget="_blank"
-            className="card-text"
-          >{body}</ReactMarkdown>
+          <ReactMarkdown linkTarget="_blank" className="card-text">
+            {body}
+          </ReactMarkdown>
         </div>
       </div>
       <style jsx>{`

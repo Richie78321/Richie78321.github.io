@@ -27,26 +27,31 @@ export default function Papers({ papersMarkdown }) {
           </a>
         </p>
         <div className="custom-control custom-switch text-muted mb-2">
-          <input type="checkbox" className="custom-control-input" id="showNotesSwitch" onChange={(e) => setShowNotes(e.target.checked)} />
-          <label className="custom-control-label" for="showNotesSwitch">Show notes</label>
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="showNotesSwitch"
+            onChange={(e) => setShowNotes(e.target.checked)}
+          />
+          <label className="custom-control-label" for="showNotesSwitch">
+            Show notes
+          </label>
         </div>
         {showNotes ? (
-            <ReactMarkdown
-              linkTarget="_blank"
-              className="papersMarkdown"
-            >
-              {papersMarkdown}
-            </ReactMarkdown>
-          ) : (
-            <ReactMarkdown
-              linkTarget="_blank"
-              className="papersMarkdown"
-              components={{
-                li: CustomListItem,
-              }}
-            >
-              {papersMarkdown}
-            </ReactMarkdown>)}
+          <ReactMarkdown linkTarget="_blank" className="papersMarkdown">
+            {papersMarkdown}
+          </ReactMarkdown>
+        ) : (
+          <ReactMarkdown
+            linkTarget="_blank"
+            className="papersMarkdown"
+            components={{
+              li: CustomListItem,
+            }}
+          >
+            {papersMarkdown}
+          </ReactMarkdown>
+        )}
       </div>
     </BaseLayout>
   );
