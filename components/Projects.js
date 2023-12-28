@@ -27,9 +27,8 @@ function ProjectCard({ projectMarkdown }) {
           </div>
           <ReactMarkdown
             linkTarget="_blank"
-            source={body}
             className="card-text"
-          />
+          >{body}</ReactMarkdown>
         </div>
       </div>
       <style jsx>{`

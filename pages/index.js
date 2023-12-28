@@ -48,7 +48,7 @@ export default function Index({ bioMarkdown, projectsMarkdown }) {
 
         <div className="mb-4">
           <h3>About me</h3>
-          <ReactMarkdown linkTarget="_blank" source={bioMarkdown} />
+          <ReactMarkdown linkTarget="_blank">{bioMarkdown}</ReactMarkdown>
           <GitHubScroller />
         </div>
 
