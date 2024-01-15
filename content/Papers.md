@@ -33,6 +33,10 @@ Mixture of Experts (MoE):
   - In this case, the MoE layers are in the feedforward section of the transformer layers. The experts operate indepdently on each token in the sequence, as is done with the standard feedforward section of the transformer layer.
   - This paper also discusses a lot of the infrastructure challenges with this type of model. I have less experience in the domain of distributed training so didn't get as much from this section. One interesting idea was the idea of "expert capacity", where experts would process batches of multiple tokens at once, which is necessary to maximize the compute capacity of GPUs/TPUs. Because the number of tokens allocated to an expert within a single batch is dynamic based on the routing gate & matrix multiplications needed to be statically initialized, the researchers essentially needed to "predict" the maximum batch size for each expert.
 
+Augmented LLMs:
+
+- [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
+
 Test-Time Compute:
 
 - [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
