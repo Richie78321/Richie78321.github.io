@@ -35,7 +35,11 @@ Mixture of Experts (MoE):
 
 Augmented LLMs:
 
+- [Augmented Language Models: a Survey](https://arxiv.org/abs/2302.07842)
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
+  - ReAct (reason + action) is an LLM prompting strategy that interleaves thoughts (reasoning) with actions (searching, performing some observation, answering the question) in order to accomplish some task.
+  - ReAct is a combination of two existing approaches: chain-of-thought prompting for improving LLM reasoning + actions.
 
 Test-Time Compute:
 
