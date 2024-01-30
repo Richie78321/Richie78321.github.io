@@ -68,6 +68,13 @@ Model Deployment:
     - Horizontal model parallelism means splitting the model within layers.
       - This is much more complex and often avoided if possible.
       - In a simple example, consider splitting a single large matrix multiplication across multiple machines. At the end of the day, a matrix multiplication is most simply a series of dot products.
+     
+Embedding Models:
+- [Text and Code Embeddings by Contrastive Pre-Training](https://arxiv.org/abs/2201.10005)
+  - This paper introduces an embedding model trained with large-scale contrastive pre-training.
+  - Contrastive pre-training is where the model is tasked to produce a single vector for a segment of text. If two segments of text are assumed to be similar, then cross-entropy loss incentivizes the model to increase the cosine similarity between those two vectors. The opposite is true for negative pairs.
+  - This learning is unsupervised, leveraging the assumption that nearby text is similar.
+  - They use a clever training trick where they compute the embedding vector for every segment in a batch once, and then they use all the embeddings not related to the original positive text pair to represent the negative pairs.
 
 ## Distributed Systems
 
