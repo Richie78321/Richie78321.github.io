@@ -10,6 +10,7 @@ Transformers:
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
   - The original paper introducing Transformer models, the model used for most LLMs.
 - [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
+- [Formal Algorithms for Transfomers](https://arxiv.org/abs/2207.09238)
 
 GPTs:
 
