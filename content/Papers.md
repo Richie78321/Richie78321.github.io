@@ -77,6 +77,14 @@ Embedding Models:
   - This learning is unsupervised, leveraging the assumption that nearby text is similar.
   - They use a clever training trick where they compute the embedding vector for every segment in a batch once, and then they use all the embeddings not related to the original positive text pair to represent the negative pairs.
 
+Fine-Tuning:
+
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+
+Evaluation:
+
+- [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
+
 ## Distributed Systems
 
 - [Spanner: Google’s Globally-Distributed Database](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
