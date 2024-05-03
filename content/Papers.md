@@ -12,12 +12,18 @@ Transformers:
 - [An Introduction to Transformers](https://arxiv.org/abs/2304.10557)
 - [Formal Algorithms for Transfomers](https://arxiv.org/abs/2207.09238)
 
-GPTs:
+LLMs:
 
 - [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY)
   - A truly awesome tutorial that helps build an intuition for how these models are actually "built".
 - [Language Models are Unsupervised Multitask Learners (GPT-2)](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 - [Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/abs/2005.14165)
+- [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)
+
+Fine-Tuning:
+
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+- [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
 
 Mixture of Experts (MoE):
 
@@ -33,6 +39,7 @@ Mixture of Experts (MoE):
   - This paper explores the idea that it is unnecessary to route to more than one expert at a time.
   - In this case, the MoE layers are in the feedforward section of the transformer layers. The experts operate indepdently on each token in the sequence, as is done with the standard feedforward section of the transformer layer.
   - This paper also discusses a lot of the infrastructure challenges with this type of model. I have less experience in the domain of distributed training so didn't get as much from this section. One interesting idea was the idea of "expert capacity", where experts would process batches of multiple tokens at once, which is necessary to maximize the compute capacity of GPUs/TPUs. Because the number of tokens allocated to an expert within a single batch is dynamic based on the routing gate & matrix multiplications needed to be statically initialized, the researchers essentially needed to "predict" the maximum batch size for each expert.
+- [Mixture-of-Depths: Dynamically allocating compute in transformer-based language models](https://arxiv.org/abs/2404.02258)
 
 Augmented LLMs:
 
@@ -77,13 +84,17 @@ Embedding Models:
   - This learning is unsupervised, leveraging the assumption that nearby text is similar.
   - They use a clever training trick where they compute the embedding vector for every segment in a batch once, and then they use all the embeddings not related to the original positive text pair to represent the negative pairs.
 
-Fine-Tuning:
-
-- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
-
 Evaluation:
 
 - [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
+
+Diffusion:
+
+- [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+
+State Space Models:
+
+- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752)
 
 ## Distributed Systems
 
