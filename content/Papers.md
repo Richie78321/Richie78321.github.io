@@ -75,6 +75,7 @@ Model Deployment:
     - Horizontal model parallelism means splitting the model within layers.
       - This is much more complex and often avoided if possible.
       - In a simple example, consider splitting a single large matrix multiplication across multiple machines. At the end of the day, a matrix multiplication is most simply a series of dot products.
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180)
 
 Embedding Models:
 
