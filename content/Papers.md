@@ -76,6 +76,14 @@ Model Deployment:
       - This is much more complex and often avoided if possible.
       - In a simple example, consider splitting a single large matrix multiplication across multiple machines. At the end of the day, a matrix multiplication is most simply a series of dot products.
 - [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180)
+- [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)
+- [LLM Inference Performance Engineering](https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices)
+
+Quantization:
+- [Survey of Quantization Methods](https://noway.moe/llama/quantization)
+- [GPTQ Paper](https://arxiv.org/abs/2210.17323)
+- [AWQ Paper](https://arxiv.org/pdf/2306.00978)
+- [GGUF](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md)
 
 Embedding Models:
 
