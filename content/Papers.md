@@ -80,6 +80,7 @@ Model Deployment:
 - [LLM Inference Performance Engineering](https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices)
 
 Quantization:
+
 - [Survey of Quantization Methods](https://noway.moe/llama/quantization)
 - [GPTQ Paper](https://arxiv.org/abs/2210.17323)
 - [AWQ Paper](https://arxiv.org/pdf/2306.00978)
