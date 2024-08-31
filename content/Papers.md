@@ -6,8 +6,6 @@
   - "KL Divergence" is "the average number of extra bits needed to encode the data, due to the fact that we used distribution `q` to encode the data instead of the true distribution `p`". KL Divergence is zero when the distributions are the same, i.e. we needed no extra bits.
   - "Cross Entropy" is just `kl_divergence + q_entropy`. I.e. the cross entropy is the average amount of information needed when we use `q` instead of `p`. Minimizing this is minimizing both the entropy (i.e. uncertainty) of `q`, while also minimizing the distance between `q` and `p`.
 
-
-
 ## AI
 
 Introductory:
