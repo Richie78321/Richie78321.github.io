@@ -1,3 +1,13 @@
+## Machine Learning & Mathematics
+
+- [Intuition for entropy & KL divergence](https://jaketae.github.io/study/information-entropy/)
+  - "Shannon information" represents the amount of information gained from an event. If an event is very common, you really don't gain very much information from learning that it happened. If an event is very rare, it is more informative. If the sun rises every day, it's not super useful to learn that it will happen again tomorrow.
+  - "Entropy" is the average amount of information needed to represent an event sampled from a probability distribution `X`. Entropy is the highest when a probability distribution is completely uniform. This makes sense for two reasons: (1) for an unbalanced distribution, the weighted average information is dominated by the common event, which has low information; (2) when a distribution is completely uniform, it's harder to predict!
+  - "KL Divergence" is "the average number of extra bits needed to encode the data, due to the fact that we used distribution `q` to encode the data instead of the true distribution `p`". KL Divergence is zero when the distributions are the same, i.e. we needed no extra bits.
+  - "Cross Entropy" is just `kl_divergence + q_entropy`. I.e. the cross entropy is the average amount of information needed when we use `q` instead of `p`. Minimizing this is minimizing both the entropy (i.e. uncertainty) of `q`, while also minimizing the distance between `q` and `p`.
+
+
+
 ## AI
 
 Introductory:
