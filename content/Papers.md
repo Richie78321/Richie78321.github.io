@@ -57,7 +57,7 @@ Augmented LLMs:
   - ReAct (reason + action) is an LLM prompting strategy that interleaves thoughts (reasoning) with actions (searching, performing some observation, answering the question) in order to accomplish some task.
   - ReAct is a combination of two existing approaches: chain-of-thought prompting for improving LLM reasoning + actions.
 
-Test-Time Compute:
+OpenAI o1 & Test-Time Compute:
 
 - [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
   - This paper explores the idea of training a verifier model to verify solutions or logical steps, and then using that verifier to score the correctness of many LLM-generated problem solutions.
@@ -65,6 +65,7 @@ Test-Time Compute:
   - The first type of verifier model requires training from human-labelled data.
   - This paper represents an interesting paradigm shift: test-time compute (the amount of compute used for inference) can matter just as much as train-time compute.
   - This paper acknowledges the potential of training a solution-generating model on the reward outputs from the verifier model.
+- [Qwen2.5-Math Technical Report](https://arxiv.org/html/2409.12122v1)
 
 Model Deployment:
 
