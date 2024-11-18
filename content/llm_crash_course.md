@@ -41,7 +41,7 @@ Resources:
     - P2: [BERT Paper](https://arxiv.org/abs/1810.04805)
   - Encoder-decoder
     - P3: [Google T5 Paper](https://arxiv.org/abs/1910.10683)
-  - [Mixture of experts](https://arxiv.org/pdf/2101.03961)
+  - P2: [Mixture of experts](https://arxiv.org/pdf/2101.03961)
 - P2: [Vision transformers](https://arxiv.org/pdf/2010.11929)
 - P3: [Object detection (DETR)](https://arxiv.org/abs/2005.12872)
 
