@@ -13,11 +13,16 @@ Resources:
 
 Questions you want to answer:
 
-- What are the core components of a transformer block? What is self-attention? What is cross-attention? What is multi-headed attention?
+- What are the core components of a transformer block?
+  - What is self-attention?
+  - What is cross-attention?
+  - What is multi-headed attention?
 - In the NLP domain, what did transformers replace?
 - What is inductive bias and why do transformers have less of it than earlier NLP methods?
 - What does less inductive bias typically mean for training data requirements & scalability?
-- What are large language model scaling laws? Why are they significant? How are they useful for model experimentation?
+- What are large language model scaling laws?
+  - Why are they significant?
+  - How are they useful for model experimentation?
 
 ## Transformer Applications
 
@@ -43,9 +48,9 @@ Resources:
 Questions you want to answer:
 
 - What are the three popular transformer architectures? When are they used?
-- What is the benefit of mixture-of-experts models?
 - Encoder-only and decoder-only architectures only have a few key differences -- what are they?
 - What is the motivation for masked attention in decoder-only transformers?
+- What is the benefit of mixture-of-experts models over dense models?
 - Are transformers only designed to work on sequential data?
 - [probably more]
 
