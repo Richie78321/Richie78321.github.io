@@ -1,6 +1,7 @@
 ---
 title: "Genetic Fish Tank"
-image: "projects/genetic-fish-tank.gif"
+image: "projects/genetic-fish-tank.jpg"
+video: "projects/genetic-fish-tank.mp4"
 link: "https://github.com/Richie78321/genetic-fish-tank"
 date: "6/1/2019"
 ---

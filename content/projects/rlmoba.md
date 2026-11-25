@@ -1,6 +1,7 @@
 ---
 title: "RL MOBA"
-image: "projects/rlmoba.gif"
+image: "projects/rlmoba.jpg"
+video: "projects/rlmoba.mp4"
 link: "https://github.com/Richie78321/rl-moba"
 date: "5/4/2021"
 ---

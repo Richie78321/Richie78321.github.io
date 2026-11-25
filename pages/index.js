@@ -16,37 +16,20 @@ export default function Index({ bioMarkdown, projectsMarkdown }) {
             <img
               className="rounded img-fluid"
               src="/me.jpg"
-              width="150px"
-            ></img>
+              width="150"
+              height="150"
+              alt="Photo of Richie Goulazian"
+            />
           </div>
           <div className="col-md-10 align-self-center">
-            <span className="d-none d-lg-inline">
-              <h1 className="display-1 text-center my-auto">
-                Richie Goulazian
-              </h1>
-            </span>
-            <span className="d-none d-md-inline d-lg-none">
-              <h1 className="display-3 text-center my-auto">
-                Richie Goulazian
-              </h1>
-            </span>
-            <span className="d-none d-sm-inline d-md-none">
-              <h1 className="display-4 text-center my-auto">
-                Richie Goulazian
-              </h1>
-            </span>
-            <span className="d-inline d-sm-none">
-              <h1 className="font-weight-normal text-center my-auto">
-                Richie Goulazian
-              </h1>
-            </span>
+            <h1 className="site-name text-center my-auto">Richie Goulazian</h1>
           </div>
         </div>
 
         <hr className="mb-3" />
         <Socials />
 
-        <div className="mb-4">
+        <div className="mb-4 readable">
           <h3>About me</h3>
           <ReactMarkdown linkTarget="_blank">{bioMarkdown}</ReactMarkdown>
           <GitHubScroller />
@@ -54,6 +37,20 @@ export default function Index({ bioMarkdown, projectsMarkdown }) {
 
         <Projects projectsMarkdown={projectsMarkdown} />
       </div>
+      <style jsx>{`
+        /* One heading that scales smoothly with the screen, instead of four
+           copies swapped at breakpoints. Sizes match the old display classes. */
+        .site-name {
+          font-size: clamp(2.25rem, 1rem + 6vw, 6rem);
+          font-weight: 300;
+          line-height: 1.1;
+        }
+
+        /* Keep paragraphs to a comfortable line length on wide screens. */
+        .readable {
+          max-width: 48rem;
+        }
+      `}</style>
     </BaseLayout>
   );
 }

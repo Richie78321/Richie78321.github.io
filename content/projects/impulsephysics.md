@@ -1,6 +1,7 @@
 ---
 title: "Impulse Physics Engine"
-image: "projects/impulse-physics.gif"
+image: "projects/impulse-physics.jpg"
+video: "projects/impulse-physics.mp4"
 link: "https://github.com/Richie78321/c-physics"
 date: "3/1/2020"
 ---

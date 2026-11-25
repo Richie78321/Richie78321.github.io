@@ -1,6 +1,7 @@
 ---
 title: "Space Farmer"
-image: "projects/space-farmer.gif"
+image: "projects/space-farmer.jpg"
+video: "projects/space-farmer.mp4"
 link: "https://github.com/Richie78321/space-farmer"
 date: "1/1/2017"
 ---

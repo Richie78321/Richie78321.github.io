@@ -1,6 +1,7 @@
 ---
 title: "Maze Ant"
-image: "projects/maze-ant.gif"
+image: "projects/maze-ant.jpg"
+video: "projects/maze-ant.mp4"
 link: "https://github.com/Richie78321/modular-genetics-csharp"
 date: "1/1/2018"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Craft War"
-image: "projects/craft-war.gif"
+image: "projects/craft-war.jpg"
+video: "projects/craft-war.mp4"
 link: "https://github.com/Richie78321/craft-war"
 date: "4/1/2017"
 ---

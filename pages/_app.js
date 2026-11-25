@@ -1,6 +1,5 @@
 import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/papers.css";
 
 function MyApp({ Component, pageProps }) {
   return (

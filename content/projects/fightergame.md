@@ -1,6 +1,7 @@
 ---
 title: "Fighter Game"
-image: "projects/fighter-game.gif"
+image: "projects/fighter-game.jpg"
+video: "projects/fighter-game.mp4"
 link: "https://github.com/Richie78321/fighter-game"
 date: "5/1/2018"
 ---

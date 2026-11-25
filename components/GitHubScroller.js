@@ -64,14 +64,14 @@ export default function GitHubScroller() {
   }
 
   return (
-    <div class="mx-4">
+    <div className="mx-4">
       <hr />
       I'm always doing something:
       <br />
       <div className="text-truncate my-1 text-primary">
         <TextScroller textToScroll={recentCommits} />
       </div>
-      <footer class="blockquote-footer">
+      <footer className="blockquote-footer">
         Pulled from my <a href="https://github.com/Richie78321">GitHub</a>
       </footer>
       <hr />
